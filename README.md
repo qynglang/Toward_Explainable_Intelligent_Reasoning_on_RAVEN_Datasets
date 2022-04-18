@@ -3,7 +3,9 @@ Human relies on generalizable hierarchical perception and abstract reasoning abi
 
 ## Explainable-VAE
 You can use the following code to train the Explainable VAE model
+
 `$ cd E-VAE
+
 $ python run_others.py -c configs/bbvae_bvae.yaml`
 
 We can change the address of the images and labels in dataset_others.
