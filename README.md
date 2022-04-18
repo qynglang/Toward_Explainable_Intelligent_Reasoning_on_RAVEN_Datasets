@@ -16,7 +16,7 @@ You can adjust the size of the training dataset by running the following line (5
 
 More information for the original beta-VAE model locate at https://github.com/AntixK/PyTorch-VAE
 
-After training the E-VAE model, please put the checkpoint files in the log folder.
+After training the E-VAE model, please put the checkpoint files in the CMs/log folder.
 
 ## Full Model Testing
 The code for solving a single RAVEN problem is available in solve_all.py, The function takes two inputs: the RAVEN problems' images, and a “draw” index indicating whether you want to generate a figure for the problem.
