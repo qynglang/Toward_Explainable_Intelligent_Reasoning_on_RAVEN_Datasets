@@ -8,7 +8,7 @@ You can use the following code to train the Explainable VAE model
 
 `$ python run_others.py -c configs/bbvae_bvae.yaml`
 
-You can change the address of the images and labels in dataset_others.
+You can change the address of the images and labels in dataset_others.py
 
 You can adjust the size of the training dataset by running the following line (50% of the original dataset).
 
