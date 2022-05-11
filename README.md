@@ -18,14 +18,34 @@ More information for the original beta-VAE model locate at https://github.com/An
 
 After training the E-VAE model, please put the checkpoint files in the CMs/log folder.
 
+## Cognitive Map
+You can use `relation_trim.py`, `run_position.py`, and `run_position_3.py` to train attribute relationship cognitive maps, two-by-two position relationship cognitive maps, and three-by-three relationship cognitive maps. They take the output of Explainable-VAE module as input, and learn abstract relationships.
+
 ## Full Model Testing
 The code for solving a single RAVEN problem is available in solve_all.py, The function takes two inputs: the RAVEN problems' images, and a “draw” index indicating whether you want to generate a figure for the problem.
 
 You can use the following code to test the full model:
 
+`$python run_raven.py`
+
+`$python run_iraven.py`
+
+`$python run_fair.py`
+
 `$python run_all.py`
 
-By default, run_all.py does not generate images.
+The first three files runs on RAVEN, I-RAVEN, and RAVEN-fair dataset. run_all.py runs with artificially designed cognitive maps.
+By default, run_all.py does not generate images. You can change:
+
+`solve_and_draw(data,0)`
+
+into 
+
+`solve_and_draw(data,1)`
+
+to produce possible answer images for the problems.
+
+
 
 
 
