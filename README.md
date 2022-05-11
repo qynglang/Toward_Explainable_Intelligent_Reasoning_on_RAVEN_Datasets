@@ -27,6 +27,8 @@ The code for solving a single RAVEN problem is available in solve_all.py, The fu
 
 You can use the following code to test the full model:
 
+`$ cd CMs`
+
 `$python run_raven.py`
 
 `$python run_iraven.py`
